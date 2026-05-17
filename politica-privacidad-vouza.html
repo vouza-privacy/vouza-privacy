@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — VOUZA Centro de Medicina y Estética</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #faf8f4;
+    --parchment: #f2ede4;
+    --gold: #c9a96e;
+    --gold-dark: #a07840;
+    --ink: #1a1714;
+    --ink-mid: #3d3730;
+    --ink-light: #7a6e62;
+    --border: #e0d8cc;
+    --accent: #8b4a6b;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  header {
+    background: var(--ink);
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 60px,
+      rgba(201,169,110,0.04) 60px,
+      rgba(201,169,110,0.04) 61px
+    );
+  }
+
+  .logo-mark {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border: 1.5px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .logo-mark span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+  }
+
+  header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  header p {
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+  }
+
+  .divider {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1.25rem auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+  }
+
+  .meta-bar {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background: var(--parchment);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 13px;
+    color: var(--ink-light);
+  }
+
+  .meta-bar span strong {
+    color: var(--ink-mid);
+    font-weight: 500;
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.03em;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 1.2em;
+    background: var(--gold);
+    flex-shrink: 0;
+    border-radius: 1px;
+  }
+
+  p {
+    color: var(--ink-mid);
+    margin-bottom: 0.9rem;
+    font-size: 15px;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin: 0.75rem 0 0.9rem 0;
+    padding: 0;
+  }
+
+  ul li {
+    color: var(--ink-mid);
+    font-size: 15px;
+    padding: 0.35rem 0 0.35rem 1.4rem;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+  }
+
+  ul li:last-child { border-bottom: none; }
+
+  ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .contact-card {
+    background: var(--parchment);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 4px 4px 0;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .contact-card p {
+    margin-bottom: 0.4rem;
+    font-size: 14px;
+  }
+
+  .contact-card a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  .contact-card a:hover { text-decoration: underline; }
+
+  .highlight-box {
+    background: #fdf6ee;
+    border: 1px solid #e8d9c0;
+    border-radius: 4px;
+    padding: 1.1rem 1.4rem;
+    margin: 1rem 0;
+  }
+
+  .highlight-box p {
+    font-size: 14px;
+    color: var(--ink-mid);
+    margin: 0;
+  }
+
+  footer {
+    background: var(--ink);
+    color: var(--ink-light);
+    text-align: center;
+    padding: 2rem;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+
+  footer strong {
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 2rem 1.25rem 4rem; }
+    .meta-bar { flex-direction: column; gap: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark"><span>V</span></div>
+  <h1>VOUZA</h1>
+  <p>Centro de Medicina y Estética · Puerto Madryn</p>
+  <div class="divider"></div>
+  <p style="font-size:14px; color:rgba(255,255,255,0.7); text-transform:none; letter-spacing:0.02em;">Política de Privacidad</p>
+</header>
+
+<div class="container">
+
+  <div class="meta-bar">
+    <span><strong>Vigencia:</strong> 17 de mayo de 2025</span>
+    <span><strong>Última actualización:</strong> 17 de mayo de 2025</span>
+    <span><strong>Responsable:</strong> VOUZA Centro de Medicina y Estética</span>
+  </div>
+
+  <section>
+    <h2>Introducción</h2>
+    <p>VOUZA Centro de Medicina y Estética ("VOUZA", "nosotros", "nuestro") opera en Puerto Madryn, Chubut, Argentina, y utiliza herramientas digitales para gestionar la comunicación con sus clientes y potenciales clientes.</p>
+    <p>La presente Política de Privacidad describe cómo recopilamos, utilizamos, almacenamos y protegemos la información personal que obtenemos a través de nuestras aplicaciones conectadas a la plataforma Meta (Facebook/WhatsApp), incluyendo las apps <strong>Leads VOUZA</strong> y <strong>VOUZA Ads Manager</strong>.</p>
+  </section>
+
+  <section>
+    <h2>Datos que recopilamos</h2>
+    <p>A través de nuestras integraciones con WhatsApp Business API y Meta Ads, podemos recopilar los siguientes datos personales:</p>
+    <ul>
+      <li>Número de teléfono de WhatsApp</li>
+      <li>Nombre de perfil de WhatsApp</li>
+      <li>Contenido de los mensajes enviados voluntariamente a través de WhatsApp</li>
+      <li>Información proporcionada durante consultas (nombre, apellido, tratamiento de interés)</li>
+      <li>Datos de interacción con anuncios publicitarios en Facebook e Instagram (solo a nivel agregado y anonimizado mediante Meta Conversions API)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Finalidad del tratamiento</h2>
+    <p>Los datos recopilados son utilizados exclusivamente para las siguientes finalidades:</p>
+    <ul>
+      <li>Atender consultas y solicitudes de información sobre nuestros servicios estéticos y médicos</li>
+      <li>Gestionar el seguimiento de potenciales clientes (leads) de forma interna</li>
+      <li>Enviar recordatorios de turnos y comunicaciones operativas relacionadas con los servicios contratados</li>
+      <li>Medir la efectividad de nuestras campañas publicitarias en Meta Ads mediante eventos de conversión anonimizados</li>
+      <li>Mejorar la calidad de atención al cliente</li>
+    </ul>
+    <div class="highlight-box">
+      <p>No utilizamos sus datos personales para elaborar perfiles de comportamiento, ceder información a terceros con fines comerciales, ni para ninguna finalidad distinta a las enumeradas anteriormente.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Base legal del tratamiento</h2>
+    <p>El tratamiento de sus datos se realiza sobre las siguientes bases legales:</p>
+    <ul>
+      <li><strong>Consentimiento:</strong> al iniciar una conversación por WhatsApp con VOUZA, usted consiente voluntariamente el intercambio de información.</li>
+      <li><strong>Interés legítimo:</strong> gestión interna de contactos para la prestación de servicios médico-estéticos.</li>
+      <li><strong>Cumplimiento de obligaciones legales</strong> aplicables en la República Argentina (Ley 25.326 de Protección de Datos Personales).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Almacenamiento y seguridad</h2>
+    <p>Los datos son almacenados en herramientas de gestión interna (Google Sheets) con acceso restringido al equipo de VOUZA. Los registros de conversaciones se conservan para dar seguimiento a las consultas activas y son revisados periódicamente.</p>
+    <p>Implementamos medidas técnicas y organizativas razonables para proteger sus datos contra accesos no autorizados, pérdida o alteración.</p>
+    <p>No compartimos datos personales con terceros, salvo con los proveedores de tecnología que procesan datos en nuestro nombre (Make.com, Google, Meta) bajo sus propias políticas de privacidad y con los cuales mantenemos acuerdos de procesamiento de datos.</p>
+  </section>
+
+  <section>
+    <h2>Conservación de datos</h2>
+    <p>Los datos personales se conservan durante el tiempo necesario para cumplir con las finalidades descritas en esta política. Una vez que la relación comercial finaliza o a solicitud del titular, los datos son eliminados de nuestros registros activos.</p>
+  </section>
+
+  <section>
+    <h2>Derechos del titular</h2>
+    <p>En virtud de la Ley 25.326 de Protección de Datos Personales de la República Argentina, usted tiene derecho a:</p>
+    <ul>
+      <li>Acceder a sus datos personales en nuestro poder</li>
+      <li>Rectificar datos inexactos o incompletos</li>
+      <li>Solicitar la supresión de sus datos ("derecho al olvido")</li>
+      <li>Oponerse al tratamiento de sus datos</li>
+      <li>Revocar el consentimiento otorgado en cualquier momento</li>
+    </ul>
+    <p>Para ejercer cualquiera de estos derechos, contáctenos a través de los medios indicados a continuación.</p>
+  </section>
+
+  <section>
+    <h2>Uso de WhatsApp Business API</h2>
+    <p>VOUZA utiliza la API de WhatsApp Business a través de la plataforma Meta para automatizar parte de la atención inicial a consultas. Los mensajes son procesados mediante herramientas de automatización propias. Al contactarnos por WhatsApp, usted acepta que su mensaje puede ser procesado por nuestro sistema automatizado antes de ser atendido por un miembro del equipo humano.</p>
+    <div class="highlight-box">
+      <p>Nuestras aplicaciones (<em>Leads VOUZA</em> y <em>VOUZA Ads Manager</em>) son de uso exclusivo interno para la gestión de VOUZA. No proveemos acceso a estas herramientas a terceros ni prestamos servicios tecnológicos a otros negocios.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cookies y tecnologías de seguimiento</h2>
+    <p>Las aplicaciones descritas en esta política no utilizan cookies propias. Las plataformas de terceros (Meta, Google) pueden utilizar sus propias cookies de acuerdo con sus respectivas políticas de privacidad, sobre las cuales VOUZA no tiene control.</p>
+  </section>
+
+  <section>
+    <h2>Cambios en esta política</h2>
+    <p>VOUZA se reserva el derecho de actualizar esta Política de Privacidad cuando sea necesario. Las modificaciones serán publicadas en esta misma página con la fecha de actualización correspondiente. Le recomendamos revisarla periódicamente.</p>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <p>Para consultas, ejercicio de derechos o cualquier cuestión relacionada con el tratamiento de sus datos personales, puede contactarnos:</p>
+    <div class="contact-card">
+      <p><strong>VOUZA Centro de Medicina y Estética</strong></p>
+      <p>📍 Puerto Madryn, Chubut, Argentina</p>
+      <p>📱 WhatsApp: <a href="https://wa.me/5492804000000">Contactar por WhatsApp</a></p>
+      <p>🌐 Instagram: <a href="https://instagram.com/vouza.estetica">@vouza.estetica</a></p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <strong>VOUZA Centro de Medicina y Estética</strong><br>
+  Puerto Madryn, Chubut, Argentina · Todos los derechos reservados · 2025
+</footer>
+
+</body>
+</html>
